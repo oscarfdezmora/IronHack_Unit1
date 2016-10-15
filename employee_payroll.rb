@@ -60,7 +60,7 @@ class Payroll
   		@employees.each do |employee|
   			puts "#{employee.name} => #{employee.calculate_salary}"
   		end
-  		venture = employes.reduce(0){|sum,employee| sum + employee.calculate_salary}
+  		venture = @employees.reduce(0){|sum,employee| sum + employee.calculate_salary}
   		puts "venture => #{venture}"
   	end
 end
